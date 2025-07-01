@@ -27,6 +27,10 @@ const MenuItem = styled.li`
     .active {
         color: yellow;
     }
+
+    @media (max-width: 767px) {
+        font-size: 2.5vw;
+    }
 `;
 
 const Header = () => {
@@ -37,7 +41,7 @@ const Header = () => {
             <Menu>
                 <MenuItem> <NavLink to="/date" activeClassName="active">별자리날짜 </NavLink> </MenuItem>
                 <MenuItem> <NavLink to="/personality"> 별자리성격 </NavLink> </MenuItem>
-                <MenuItem> <NavLink to="/chemistry">  별자리궁합 </NavLink> </MenuItem>
+                <MenuItem> <NavLink to="/chemistry"> 별자리궁합 </NavLink> </MenuItem>
                 <MenuItem> <NavLink to="/fortune"> 별자리운세 </NavLink> </MenuItem>
             </Menu>
         </div>
